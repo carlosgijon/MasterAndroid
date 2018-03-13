@@ -29,8 +29,20 @@ public class MainActivity extends AppCompatActivity {
                         Bundle bundle = new Bundle();
                         bundle.putString("SALUDO", edt.getText().toString());
                         intent.putExtras(bundle);
+                        startActivity(intent);
                     }
                 }
         );
+/*
+            PARA UTILIZAR ESTO HAY QUE AÑADIR LA VERSION 1_8 DE JAVA EN EL ARCHIVO build.gradle (Module:app) YA QUE ES UNA EXPRESION LAMBDA
+
+            but.setOnClickListener((v) -> {
+            Intent intent = new Intent(MainActivity.this, Postales.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("SALUDO", edt.getText().toString());
+            intent.putExtras(bundle);
+            startActivity(intent);
+        });
+        */
     }
 }
