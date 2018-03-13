@@ -11,6 +11,9 @@ public class Postales extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_postales);
         final TextView saludo = findViewById(R.id.textView);
+        // recuperamos el string que hemos mandado con el bundle
+        Bundle bund = getIntent().getExtras();
+        saludo.setText(bund.getString("SALUDO"));
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
