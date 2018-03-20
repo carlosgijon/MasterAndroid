@@ -22,11 +22,10 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/check_14413"
-            />
+            android:src="@drawable/boton_selector"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/texto_text"
@@ -46,6 +45,10 @@
             android:onClick="onToggleClicked"
             />
 
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
     </LinearLayout>
 

@@ -17,10 +17,10 @@ public class BotonActivity extends AppCompatActivity {
         // ¿Esta On?
         boolean encendido = ((ToggleButton)vista).isChecked();
         if(encendido) {
-            // Vibrar ON
+            // vibracion ON
         }
         else {
-            // Vibrar OFF
+            // vibracion OFF
         }
     }
 }
