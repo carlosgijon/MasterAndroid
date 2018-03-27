@@ -3,4 +3,6 @@
     <string name="button_text">botoncete</string>
     <string name="texto_text">Esto es un texto larguiiiiiiiiiisimo</string>
     <string name="pulsame">pulsame</string>
+    <string name="Texto_intercambiable_botoncete">Le has dado al botoncete!!!!</string>
+    <string name="Texto_borrado">BORRADO!!!</string>
 </resources>

@@ -15,21 +15,27 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/BtnBotoncete"
             android:drawableEnd="@drawable/check_14413"
             android:text="@string/button_text"
             />
 
-        <ImageButton
+        <ImageButton android:id="@+id/BtnConImagen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/boton_selector"/>
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/TxtBotoncete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/texto_text"
+            android:text="Texto que cambia al pulsar botoncete"
             android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtEditable"/>
 
         <Button android:id="@+id/BtnBoton1"
             android:text="@string/pulsame"
@@ -44,11 +50,25 @@
             android:textOff="Vibrar OFF"
             android:onClick="onToggleClicked"
             />
+        <!-- Creo un ToggleButton y un Textview que ponga en que estado esta el ToggleButton-->
+        <ToggleButton android:id="@+id/toggleMetodo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="TOGGLEBUTTON ENCENDIDO"
+            android:textOff="TOGGLEBUTTON APAGADO"
+            android:onClick="onToggleClicked"/>
+
+        <TextView android:id="@+id/textViewMetodo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Este texto indica si el Toggle button de arriba esta encendido o apagado"
+            android:textAlignment="center"/>
 
         <Switch
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
+
 
     </LinearLayout>
 
