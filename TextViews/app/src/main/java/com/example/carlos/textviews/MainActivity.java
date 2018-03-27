@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button BtnHaceCambios = findViewById(R.id.btnHacerCambios);
-        EditText TxtEditable = findViewById(R.id.txtEditable);
+        final Button BtnHaceCambios = findViewById(R.id.btnHacerCambios);
+        final EditText TxtEditable = findViewById(R.id.txtEditable);
 
         BtnHaceCambios.setOnClickListener(
                 (v) -> {
