@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Selectores</string>
+    <string name="carne">Meat</string>
+    <string name="queso">Cheese</string>
+</resources>
