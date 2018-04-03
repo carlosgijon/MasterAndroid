@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         switch(v.getId()) {
             case R.id.checkbox_carne:
                 if(checado) {
-                    texto += "Le pongo carne";
+                    texto += " le pongo carne";
                 }
                 else {
-                    texto += "No quiero carne";
+                    texto += " no quiero carne";
                 }
                 break;
             case R.id.checkbox_queso:
@@ -38,5 +39,26 @@ public class MainActivity extends AppCompatActivity {
         }
 
         textoCheckbox.setText(texto);
+    }
+
+    public void onRadioButtonClicked(View v) {
+        TextView textoRadio = findViewById(R.id.textoRadio);
+        String texto = "";
+        boolean checado = ((RadioButton)v).isChecked();
+
+        switch(v.getId()) {
+            case R.id.radio_queso:
+                if(checado) {
+                    texto += "Quiero queso";
+                }
+                break;
+            case R.id.radio_carne:
+                if(checado) {
+                    texto += "Quiero carne";
+                }
+                break;
+        }
+
+        textoRadio.setText(texto);
     }
 }

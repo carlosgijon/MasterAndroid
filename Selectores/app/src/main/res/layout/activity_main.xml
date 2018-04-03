@@ -17,19 +17,78 @@
         android:padding="10dp"
         android:textAlignment="center"
         android:text="¿Que vas a querer?"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/verdecilloVS"
         />
 
-    <CheckBox android:id="@+id/checkbox_carne"
-        android:layout_width="wrap_content"
+    <CheckBox
+        android:id="@+id/checkbox_carne"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
         android:text="@string/carne"
-        android:onClick="onCheckboxClicked"/>
+        android:theme="@style/estilo_box"
+        android:textColor="#fff"
+        android:background="@color/verdecilloVS"
+        />
 
-    <CheckBox android:id="@+id/checkbox_queso"
-        android:layout_width="wrap_content"
+    <CheckBox
+        android:id="@+id/checkbox_queso"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
         android:text="@string/queso"
-        android:onClick="onCheckboxClicked"/>
+        android:theme="@style/estilo_box"
+        android:textColor="#fff"
+        android:background="@color/verdecilloVS"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="RadioButtons"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:background="@color/amarilloVS"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/amarilloVS"
+        android:theme="@style/estilo_box">
+
+        <RadioButton android:id="@+id/radio_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carne"
+            android:onClick="onRadioButtonClicked"
+            android:paddingEnd="10dp"
+            android:textColor="#fff"
+            />
+
+        <RadioButton android:id="@+id/radio_queso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queso"
+            android:onClick="onRadioButtonClicked"
+            android:paddingEnd="10dp"
+            android:textColor="#fff"
+            />
+    </RadioGroup>
+
+    <TextView android:id="@+id/textoRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="¿Que vas a querer?"
+        android:background="@color/amarilloVS"
+        android:textColor="#fff"
+        />
 
 
 </LinearLayout>

@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="estilo_box" parent="AppTheme">
+        <item name="colorAccent">#FFF</item>
+        <item name="android:textColorSecondary">#FFF</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+    </style>
+
 </resources>
