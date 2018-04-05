@@ -90,6 +90,40 @@
         android:textColor="#fff"
         />
 
+    <!-- SPINNER-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Spinner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:background="@color/azulillo"
+        />
+
+    <Spinner android:id="@+id/planetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azulillo"
+        android:textColor="#fff"
+        android:theme="@style/estilo_box"
+        android:dropDownSelector="@color/amarilloVS">
+    </Spinner>
+
+
+    <TextView android:id="@+id/textoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="¿En que planeta estas?"
+        android:background="@color/azulillo"
+        android:textColor="#fff"
+        />
+
+
 
 </LinearLayout>
 

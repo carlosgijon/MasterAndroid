@@ -3,16 +3,41 @@ package com.example.carlos.selectores;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private Spinner spinner_planetas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Movidas para crear un Spinner
+
+        ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this,R.array.valores_array,android.R.layout.simple_spinner_item);
+        spinner_planetas = (Spinner)findViewById(R.id.planetas);
+        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner_planetas.setAdapter(adaptador);
+
+        TextView textoSpinner = findViewById(R.id.textoSpinner);
+
+        spinner_planetas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                textoSpinner.setText("Estas en el planeta " + parent.getItemAtPosition(position));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                textoSpinner.setText("¿En que planeta estas?");
+            }
+        });
     }
 
     public void onCheckboxClicked(View v) {
