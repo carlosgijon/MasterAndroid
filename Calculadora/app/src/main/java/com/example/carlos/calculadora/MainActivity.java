@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         // Vamos a deshabilitar el boton mientras no haya ningun valor en n1 y n2
         _ejecucion.setEnabled(false);
 
-        // Vamos a crear eventos para que el boton se habilite
-
         // Primero para n1
         _n1.addTextChangedListener(new TextWatcher() {
             @Override

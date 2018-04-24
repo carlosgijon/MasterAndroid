@@ -4,17 +4,7 @@
             "outputFile": "/Users/carlos/AndroidStudioProjects/MasterAndroid/Selectores/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/carlos/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8a5559a1f2ac12067bea40a6637bd923/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                },
-                {
-                    "source": "/Users/carlos/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4e92fd952aaab735ca4e6786ab232256/res/values-v24/values-v24.xml",
+                    "source": "/Users/carlos/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/40bd286ae6802d62c53419d44b7f7592/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "619,685,746,812",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "680,741,807,874"
+                    }
+                },
+                {
+                    "source": "/Users/carlos/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/54986c4805c431cae6b46006883f1c1e/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,212,347,416,480,549",
+                        "endColumns": "156,134,68,63,68,69",
+                        "endOffsets": "207,342,411,475,544,614"
                     }
                 }
             ]
