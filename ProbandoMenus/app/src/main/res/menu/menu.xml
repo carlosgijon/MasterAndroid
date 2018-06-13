@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Menu_Opcion1"
+        android:title="Sonido"
+        android:icon="@drawable/altavoz"/>
+
+    <item android:id="@+id/Menu_Opcion2"
+        android:title="Imagen" />
+
+    <item android:id="@+id/Menu_Opcion3"
+        android:title="Opciones"/>
+
+    <item android:id="@+id/Menu_Opcion4"
+        android:title="Acerca de..."/>
+
+</menu>
