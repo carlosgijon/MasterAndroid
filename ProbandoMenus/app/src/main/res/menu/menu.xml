@@ -8,8 +8,21 @@
     <item android:id="@+id/Menu_Opcion2"
         android:title="Imagen" />
 
-    <item android:id="@+id/Menu_Opcion3"
-        android:title="Opciones"/>
+    <item
+        android:title="Opciones">
+
+        <menu>
+            <item android:id="@+id/Sub_Menu_Opcion1"
+                android:title="Guardar..."/>
+
+            <item android:id="@+id/Sub_Menu_Opcion2"
+                android:title="Cargar..."/>
+        </menu>
+
+    </item>
+
+
+
 
     <item android:id="@+id/Menu_Opcion4"
         android:title="Acerca de..."/>
