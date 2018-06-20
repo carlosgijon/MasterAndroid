@@ -15,4 +15,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button android:id="@+id/btn_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="204dp"
+        android:text="@string/boton"/>
+
 </android.support.constraint.ConstraintLayout>
