@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AlmacenesSQL</string>
+    <string name="lbl_nombre">Introduzca un nombre</string>
+</resources>
